@@ -1,0 +1,30 @@
+[23-01-23 14:26:57] [PicqBotX] [INFO] 
+[23-01-23 14:26:57] [PicqBotX] [INFO]     ____  _            ____        __ _  __
+[23-01-23 14:26:57] [PicqBotX] [INFO]    / __ \(_)________ _/ __ )____  / /| |/ /
+[23-01-23 14:26:57] [PicqBotX] [INFO]   / /_/ / / ___/ __ `/ __  / __ \/ __/   /
+[23-01-23 14:26:57] [PicqBotX] [INFO]  / ____/ / /__/ /_/ / /_/ / /_/ / /_/   |
+[23-01-23 14:26:57] [PicqBotX] [INFO] /_/   /_/\___/\__, /_____/\____/\__/_/|_|
+[23-01-23 14:26:57] [PicqBotX] [INFO]                 /_/         v4.15.0.1072
+[23-01-23 14:26:57] [PicqBotX] [INFO] 日志管理器     初始化完成 [******] ...(7.53 ms)
+[23-01-23 14:26:57] [PicqBotX] [INFO] 缓存管理器     初始化完成 [******] ...(0.62 ms)
+[23-01-23 14:26:57] [PicqBotX] [INFO] DEBUG设置      初始化完成 [******] ...(0.0 ms)
+[23-01-23 14:26:57] [PicqBotX] [INFO] 事件管理器     初始化完成 [******] ...(7.15 ms)
+[23-01-23 14:26:57] [PicqBotX] [INFO] 账号管理器     初始化完成 [******] ...(0.51 ms)
+[23-01-23 14:26:57] [PicqBotX] [INFO] HTTP监听服务器 初始化完成 [******] ...(0.37 ms)
+[23-01-23 14:26:57] [PicqBotX] [INFO] 指令管理器     初始化完成 [******] ...(0.67 ms)
+[23-01-23 14:26:57] [PicqBotX] [INFO] 账号 Bot01:   版本验证完成!
+[23-01-23 14:26:57] [PicqBotX] [INFO] 正在启动...
+[23-01-23 14:26:59] [PicqBotX] [DEBUG(java.lang.Thread.run:855)] 收到新请求: CQHttp/4.15.0
+[23-01-23 14:26:59] [PicqBotX] [DEBUG(java.lang.Thread.run:855)] - 数据: {"ClassType":"GroupMessage","self_id":2417971099,"sub_type":"normal","message_id":-1554341742,"group_id":860034825,"user_id":3549035781,"anonymous":null,"message":"想要做一个世界/强化/力量的设定，想要画风二、轻一点但是又不想太缺乏质感，我需要怎么做?或者说缝合、融合进一些什么元素?","raw_message":"想要做一个世界/强化/力量的设定，想要画风二、轻一点但是又不想太缺乏质感，我需要怎么做?或者说缝合、融合进一些什么元素?","font":0,"sender":{"user_id":3549035781,"nickname":"玄冥","card":"玄冥","sex":"unknown","age":0,"area":"unknown","level":"unknown","role":"member","title":"unknown"},"time":1674455310,"post_type":"message","message_type":"group"}
+[23-01-23 14:27:18] [PicqBotX] [DEBUG(java.lang.Thread.run:855)] 收到新请求: CQHttp/4.15.0
+[23-01-23 14:27:18] [PicqBotX] [DEBUG(java.lang.Thread.run:855)] - 数据: {"ClassType":"GroupMessage","self_id":2417971099,"sub_type":"normal","message_id":-921949219,"group_id":860034825,"user_id":3549035781,"anonymous":null,"message":"[CQ:at,qq=617927140] [CQ:at,qq=2434304529] [CQ:at,qq=271811917] ","raw_message":"[CQ:at,qq=617927140] [CQ:at,qq=2434304529] [CQ:at,qq=271811917] ","font":0,"sender":{"user_id":3549035781,"nickname":"玄冥","card":"玄冥","sex":"unknown","age":0,"area":"unknown","level":"unknown","role":"member","title":"unknown"},"time":1674455329,"post_type":"message","message_type":"group"}
+[23-01-23 14:27:22] [PicqBotX] [DEBUG(java.lang.Thread.run:855)] 收到新请求: CQHttp/4.15.0
+[23-01-23 14:27:22] [PicqBotX] [DEBUG(java.lang.Thread.run:855)] - 数据: {"self_id":2417971099,"time":1674455333,"status":{"app_initialized":true,"app_enabled":true,"plugins_good":{"asyncActions":true,"backwardCompatibility":true,"defaultConfigGenerator":true,"eventDataPatcher":true,"eventFilter":true,"experimentalActions":true,"extensionLoader":true,"heartbeatGenerator":true,"http":true,"iniConfigLoader":true,"jsonConfigLoader":true,"loggers":true,"messageEnhancer":true,"postMessageFormatter":true,"rateLimitedActions":true,"restarter":true,"updater":true,"websocket":true,"websocketReverse":true,"workerPoolResizer":true},"app_good":true,"online":true,"good":true},"interval":40000,"post_type":"meta_event","meta_event_type":"heartbeat"}
+[23-01-23 14:27:28] [PicqBotX] [DEBUG(java.lang.Thread.run:855)] 收到新请求: CQHttp/4.15.0
+[23-01-23 14:27:28] [PicqBotX] [DEBUG(java.lang.Thread.run:855)] - 数据: {"ClassType":"GroupMessage","self_id":2417971099,"sub_type":"normal","message_id":455030670,"group_id":474936346,"user_id":271811917,"anonymous":null,"message":"然后你就要设计网页啦？","raw_message":"然后你就要设计网页啦？","font":0,"sender":{"user_id":271811917,"nickname":"Sariel虫宝宝","card":"Sariel虫宝宝","sex":"unknown","age":0,"area":"unknown","level":"unknown","role":"member","title":"unknown"},"time":1674455339,"post_type":"message","message_type":"group"}
+[23-01-23 14:27:48] [PicqBotX] [DEBUG(java.lang.Thread.run:855)] 收到新请求: CQHttp/4.15.0
+[23-01-23 14:27:48] [PicqBotX] [DEBUG(java.lang.Thread.run:855)] - 数据: {"ClassType":"GroupMessage","self_id":2417971099,"sub_type":"normal","message_id":502523810,"group_id":860034825,"user_id":271811917,"anonymous":null,"message":"呃","raw_message":"呃","font":0,"sender":{"user_id":271811917,"nickname":"Sariel虫宝宝","card":"Sariel虫宝宝","sex":"unknown","age":0,"area":"unknown","level":"unknown","role":"owner","title":"unknown"},"time":1674455360,"post_type":"message","message_type":"group"}
+[23-01-23 14:27:52] [PicqBotX] [DEBUG(java.lang.Thread.run:855)] 收到新请求: CQHttp/4.15.0
+[23-01-23 14:27:52] [PicqBotX] [DEBUG(java.lang.Thread.run:855)] - 数据: {"ClassType":"GroupMessage","self_id":2417971099,"sub_type":"normal","message_id":-1418233940,"group_id":860034825,"user_id":271811917,"anonymous":null,"message":"问苏宁和瑾瑜吧","raw_message":"问苏宁和瑾瑜吧","font":0,"sender":{"user_id":271811917,"nickname":"Sariel虫宝宝","card":"Sariel虫宝宝","sex":"unknown","age":0,"area":"unknown","level":"unknown","role":"owner","title":"unknown"},"time":1674455363,"post_type":"message","message_type":"group"}
+[23-01-23 14:28:02] [PicqBotX] [DEBUG(java.lang.Thread.run:855)] 收到新请求: CQHttp/4.15.0
+[23-01-23 14:28:02] [PicqBotX] [DEBUG(java.lang.Thread.run:855)] - 数据: {"self_id":2417971099,"time":1674455373,"status":{"app_initialized":true,"app_enabled":true,"plugins_good":{"asyncActions":true,"backwardCompatibility":true,"defaultConfigGenerator":true,"eventDataPatcher":true,"eventFilter":true,"experimentalActions":true,"extensionLoader":true,"heartbeatGenerator":true,"http":true,"iniConfigLoader":true,"jsonConfigLoader":true,"loggers":true,"messageEnhancer":true,"postMessageFormatter":true,"rateLimitedActions":true,"restarter":true,"updater":true,"websocket":true,"websocketReverse":true,"workerPoolResizer":true},"app_good":true,"online":true,"good":true},"interval":40000,"post_type":"meta_event","meta_event_type":"heartbeat"}

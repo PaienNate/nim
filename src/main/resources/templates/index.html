@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>故事集</title>
+        <link href="index.css" rel="stylesheet">
+        <link href="message.css" rel="stylesheet">
+	</head>
+	<body>
+        <header>
+            <div class="center">
+                <label for="menu">故事集</label>
+            </div>
+            <div class="left">
+                <!-- <button class="header-btn">设置</button> -->
+                <!-- <button class="header-btn" id="getall">全选</button> -->
+                <div class="header-div-btn" onclick="openFilter()">
+                    <svg t="1675244277707" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2671" width="200" height="200"><path d="M975.961113 63.039532A101.347197 101.347197 0 0 0 879.865066 0.025731H141.553362A101.872312 101.872312 0 0 0 69.612606 173.838799L407.261557 497.83476v322.420616a44.109661 44.109661 0 0 0 12.60276 30.981786l153.858698 157.534503a44.109661 44.109661 0 0 0 32.032016 13.65299 46.735236 46.735236 0 0 0 16.80368-3.15069 44.109661 44.109661 0 0 0 27.831096-40.958971V495.7343l305.616936-321.895501a101.872312 101.872312 0 0 0 19.95437-110.799267z" fill="#707070" p-id="2672"></path></svg>
+                </div>
+            </div>
+            <div class="right">
+                <button id="showtype" class="header-btn">夜间</button>
+            </div>
+        </header>
+        <input id="menu" type="checkbox" />
+        <div class="menu-hover story-list">
+            <div  class="story-container story-checked">
+                <div><span>测试数据集</span></div>
+                <span>测试数据集</span>
+            </div>
+            <div  class="story-container story-checked">
+                <div></div>
+                <span>测试数据集</span>
+            </div>
+            <div  class="story-container story-checked">
+                <div></div>
+                <span>测试数据集</span>
+            </div>
+            <div class="story-container story-checked">
+                <div></div>
+                <span>测试数据集</span>
+            </div>
+            <div class="story-container story-checked">
+                <div></div>
+                <span>测试数据集</span>
+            </div>
+            <div class="story-container story-checked">
+                <div></div>
+                <span>测试数据集</span>
+            </div>
+            <div class="story-container story-checked">
+                <div></div>
+                <span>测试数据集</span>
+            </div>
+            <div class="story-container story-checked">
+                <div></div>
+                <span>测试数据集</span>
+            </div>
+            <div class="story-container story-checked">
+                <div></div>
+                <span>测试数据集</span>
+            </div>
+            <div class="story-container story-checked">
+                <div></div>
+                <span>测试数据集</span>
+            </div>
+            <div class="story-container story-checked">
+                <div></div>
+                <span>测试数据集</span>
+            </div>
+            <div class="story-container story-checked">
+                <div></div>
+                <span>测试数据集</span>
+            </div>
+            <div class="story-container story-checked">
+                <div></div>
+                <span>测试数据集</span>
+            </div>
+            <div class="story-container story-checked">
+                <div></div>
+                <span>测试数据集</span>
+            </div>
+            <div class="story-container story-checked">
+                <div></div>
+                <span>测试数据集</span>
+            </div>
+            <div class="story-container story-checked">
+                <div></div>
+                <span>测试数据集</span>
+            </div>
+            <div class="story-container story-checked">
+                <div></div>
+                <span>测试数据集</span>
+            </div>
+            <div class="story-container story-checked">
+                <div></div>
+                <span>测试数据集</span>
+            </div>
+            <div class="story-container story-checked">
+                <div></div>
+                <span>测试数据集</span>
+            </div>
+            <div class="story-container story-checked">
+                <div></div>
+                <span>测试数据集</span>
+            </div>
+            <div class="story-container story-checked">
+                <div></div>
+                <span>测试数据集</span>
+            </div>
+            <div class="story-container story-checked">
+                <div></div>
+                <span>测试数据集</span>
+            </div>
+            <div class="story-container story-checked">
+                <div></div>
+                <span>测试数据集</span>
+            </div>
+            <div class="story-container story-checked">
+                <div></div>
+                <span>测试数据集</span>
+            </div>
+            <div class="story-container story-checked">
+                <div></div>
+                <span>测试数据集</span>
+            </div>
+            <div class="story-container story-checked">
+                <div></div>
+                <span>测试数据集</span>
+            </div>
+            <div class="story-container story-checked">
+                <div></div>
+                <span>测试数据集</span>
+            </div>
+            <div class="story-container story-checked">
+                <div></div>
+                <span>测试数据集</span>
+            </div>
+            <div class="story-space"></div>
+            <div class="story-space"></div>
+            <div class="story-space"></div>
+            <div class="story-space"></div>
+            <div class="story-space"></div>
+            <div class="story-space"></div>
+            <div class="story-space"></div>
+            <div class="story-space"></div>
+            <div class="story-space"></div>
+            <div class="story-space"></div>
+        </div>
+        <div class="menu-hover" id="filter-container">
+            <h3>选择要显示的用户</h3>
+            <div>
+                <div id="qqcheck">
+                </div>
+                <div class="flex-wrap">
+                    <button onclick="Print({storyname:selectStoryName,qqs:selectQQ})">下载与以上qq相关记录的文档</button>
+                    <button onclick="FilterQQ()">只查看以上qq的记录</button>
+                    <button onclick="checkQQBySelecter()">选中以上qq</button>
+                    <button onclick="returnToSource()">恢复初始数据显示</button>
+                </div>
+                <div>
+                    <input id="search" type="datetime-local" />
+                    <button onclick="Search()">前往指定时间区域</button>
+                </div>
+                <div class="flex-wrap" id="search-result">
+
+                </div>
+            </div>
+        </div>
+        <!-- <div class="list-container"> -->
+            <div id="front"></div>
+            <div id="commits">
+            </div>
+            <div id="end">
+                已经没有了
+            </div>
+        <!-- </div> -->
+        <footer>
+            <div class="pointer" id="qqSelect">选中对应qq</div>
+            <div class="pointer" id="getall">全选</div>
+            <div class="pointer" id="copy"
+            data-clipboard-text=""
+            >复制选中</div>
+            <div class="pointer" id="clear">清空选中</div>
+        </footer>
+	</body>
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js"></script>
+
+	<script src="index.js"></script>
+    
+</html>

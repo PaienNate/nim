@@ -1,0 +1,26 @@
+[23-01-23 10:29:57] [PicqBotX] [INFO] 
+[23-01-23 10:29:57] [PicqBotX] [INFO]     ____  _            ____        __ _  __
+[23-01-23 10:29:57] [PicqBotX] [INFO]    / __ \(_)________ _/ __ )____  / /| |/ /
+[23-01-23 10:29:57] [PicqBotX] [INFO]   / /_/ / / ___/ __ `/ __  / __ \/ __/   /
+[23-01-23 10:29:57] [PicqBotX] [INFO]  / ____/ / /__/ /_/ / /_/ / /_/ / /_/   |
+[23-01-23 10:29:57] [PicqBotX] [INFO] /_/   /_/\___/\__, /_____/\____/\__/_/|_|
+[23-01-23 10:29:57] [PicqBotX] [INFO]                 /_/         v4.15.0.1072
+[23-01-23 10:29:57] [PicqBotX] [INFO] 日志管理器     初始化完成 [******] ...(8.99 ms)
+[23-01-23 10:29:57] [PicqBotX] [INFO] 缓存管理器     初始化完成 [******] ...(0.68 ms)
+[23-01-23 10:29:57] [PicqBotX] [INFO] DEBUG设置      初始化完成 [******] ...(0.0 ms)
+[23-01-23 10:29:57] [PicqBotX] [INFO] 事件管理器     初始化完成 [******] ...(7.22 ms)
+[23-01-23 10:29:57] [PicqBotX] [INFO] 账号管理器     初始化完成 [******] ...(0.54 ms)
+[23-01-23 10:29:57] [PicqBotX] [INFO] HTTP监听服务器 初始化完成 [******] ...(0.41 ms)
+[23-01-23 10:29:58] [PicqBotX] [INFO] 指令管理器     初始化完成 [******] ...(0.66 ms)
+[23-01-23 10:29:58] [PicqBotX] [INFO] 账号 Bot01:   版本验证完成!
+[23-01-23 10:29:58] [PicqBotX] [INFO] 正在启动...
+[23-01-23 10:30:02] [PicqBotX] [DEBUG(java.lang.Thread.run:855)] 收到新请求: CQHttp/4.15.0
+[23-01-23 10:30:02] [PicqBotX] [DEBUG(java.lang.Thread.run:855)] - 数据: {"ClassType":"GroupMessage","self_id":2417971099,"sub_type":"normal","message_id":1001323095,"group_id":474936346,"user_id":1101839859,"anonymous":null,"message":"!记录 瓜不熟","raw_message":"!记录 瓜不熟","font":0,"sender":{"user_id":1101839859,"nickname":"派恩纳特(🐿)","card":"派恩纳特(🐿)","sex":"unknown","age":0,"area":"unknown","level":"unknown","role":"owner","title":"unknown"},"time":1674441093,"post_type":"message","message_type":"group"}
+[23-01-23 10:30:03] [PicqBotX] [DEBUG(java.lang.Thread.run:855)] 收到新请求: CQHttp/4.15.0
+[23-01-23 10:30:03] [PicqBotX] [DEBUG(java.lang.Thread.run:855)] - 数据: {"ClassType":"GroupMessage","self_id":2417971099,"sub_type":"normal","message_id":-1998142839,"group_id":860034825,"user_id":1489898749,"anonymous":null,"message":"2333","raw_message":"2333","font":0,"sender":{"user_id":1489898749,"nickname":"妮露","card":"妮露","sex":"unknown","age":0,"area":"unknown","level":"unknown","role":"admin","title":"unknown"},"time":1674441094,"post_type":"message","message_type":"group"}
+[23-01-23 10:30:04] [PicqBotX] [DEBUG(java.lang.Thread.run:855)] 收到新请求: CQHttp/4.15.0
+[23-01-23 10:30:04] [PicqBotX] [DEBUG(java.lang.Thread.run:855)] - 数据: {"ClassType":"GroupMessage","self_id":2417971099,"sub_type":"normal","message_id":-1753619317,"group_id":474936346,"user_id":1101839859,"anonymous":null,"message":"测试测试测试测试","raw_message":"测试测试测试测试","font":0,"sender":{"user_id":1101839859,"nickname":"派恩纳特(🐿)","card":"派恩纳特(🐿)","sex":"unknown","age":0,"area":"unknown","level":"unknown","role":"owner","title":"unknown"},"time":1674441096,"post_type":"message","message_type":"group"}
+[23-01-23 10:30:11] [PicqBotX] [DEBUG(java.lang.Thread.run:855)] 收到新请求: CQHttp/4.15.0
+[23-01-23 10:30:11] [PicqBotX] [DEBUG(java.lang.Thread.run:855)] - 数据: {"ClassType":"GroupMessage","self_id":2417971099,"sub_type":"normal","message_id":2080531431,"group_id":474936346,"user_id":1101839859,"anonymous":null,"message":"阿打算","raw_message":"阿打算","font":0,"sender":{"user_id":1101839859,"nickname":"派恩纳特(🐿)","card":"派恩纳特(🐿)","sex":"unknown","age":0,"area":"unknown","level":"unknown","role":"owner","title":"unknown"},"time":1674441102,"post_type":"message","message_type":"group"}
+[23-01-23 10:30:40] [PicqBotX] [DEBUG(java.lang.Thread.run:855)] 收到新请求: CQHttp/4.15.0
+[23-01-23 10:30:40] [PicqBotX] [DEBUG(java.lang.Thread.run:855)] - 数据: {"self_id":2417971099,"time":1674441121,"status":{"app_initialized":true,"app_enabled":true,"plugins_good":{"asyncActions":true,"backwardCompatibility":true,"defaultConfigGenerator":true,"eventDataPatcher":true,"eventFilter":true,"experimentalActions":true,"extensionLoader":true,"heartbeatGenerator":true,"http":true,"iniConfigLoader":true,"jsonConfigLoader":true,"loggers":true,"messageEnhancer":true,"postMessageFormatter":true,"rateLimitedActions":true,"restarter":true,"updater":true,"websocket":true,"websocketReverse":true,"workerPoolResizer":true},"app_good":true,"online":true,"good":true},"interval":40000,"post_type":"meta_event","meta_event_type":"heartbeat"}
