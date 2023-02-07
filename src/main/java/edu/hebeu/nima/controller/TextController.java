@@ -22,10 +22,11 @@ import javax.servlet.http.HttpServletResponse;
 import java.awt.*;
 import java.io.IOException;
 import java.io.OutputStream;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 @Controller
-@SaCheckLogin
+//@SaCheckLogin
 public class TextController {
     @Autowired
     public MessageInfoService messageInfoService;
@@ -135,6 +136,8 @@ public class TextController {
         List<String> stringList = new ArrayList<>();
         for(MessagePojo MessagePojo : messagePojoList)
         {
+            if(MessagePojo==null)
+                continue;
             stringList.add(MessagePojo.getStoryname());
         }
         return stringList;
@@ -152,7 +155,7 @@ public class TextController {
     @ResponseBody
     @GetMapping("/deletebyStory")
     @SaIgnore
-    public String DeleteByStoryNameList(@RequestParam String[] storylist) throws IOException {
+    public String DeleteByStoryNameList(@RequestParam List<String> storylist) throws IOException, SQLException {
         //如果现在正在记录，不能删除，因为没办法备份
         if(Const.isrecord)
         {
@@ -188,7 +191,7 @@ public class TextController {
     @GetMapping("/MergeShuju")
     @SaIgnore
     //合并故事集（选择两个或者多个故事集，传入故事集的新名称，从而将这几个故事集里的条目全部修改为对应的名称）
-    public String MergeShuju(@RequestParam String[] storylist, @RequestParam String newname) throws IOException {
+    public String MergeShuju(@RequestParam List<String> storylist, @RequestParam String newname) throws IOException, SQLException {
         //如果判断还在记录，此时不能合并，因为数据库还在更新
         if(Const.isrecord)
         {

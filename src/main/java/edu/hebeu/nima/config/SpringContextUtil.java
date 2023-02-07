@@ -4,6 +4,9 @@ package edu.hebeu.nima.config;
 import edu.hebeu.nima.mapper.MessageIndexMapper;
 import edu.hebeu.nima.mapper.MessageInfoMapper;
 import edu.hebeu.nima.service.BackupService;
+import org.apache.ibatis.session.SqlSession;
+import org.apache.ibatis.session.SqlSessionFactory;
+import org.mybatis.spring.SqlSessionFactoryBean;
 import org.springframework.beans.BeansException;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
@@ -26,6 +29,10 @@ public class SpringContextUtil implements ApplicationContextAware {
 
     public static Object getBackupBean() throws BeansException{
         return applicationContext.getBean(BackupService.class);
+    }
+
+    public static SqlSessionFactory getSqlSessionFacBean() throws BeansException{
+        return applicationContext.getBean(SqlSessionFactory.class);
     }
 
     public static Object getIndexBean() throws BeansException{
