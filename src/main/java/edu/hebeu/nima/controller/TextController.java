@@ -153,13 +153,18 @@ public class TextController {
     @GetMapping("/deletebyStory")
     @SaIgnore
     public String DeleteByStoryNameList(@RequestParam String[] storylist) throws IOException {
+        //如果现在正在记录，不能删除，因为没办法备份
         if(Const.isrecord)
         {
             return "删除失败，正在记录，请先关闭";
         }
+        //数据库的备份语句
         backupService.vacuum();
+        //这个是上传到webdav的语句，delete代表上传到delete文件夹里
         backupService.backup("delete");
+
         List<String> idlist = new ArrayList<>();
+        //通过storylist里的每一个去寻找所有的条目对应的主键ID
         for(String story:storylist)
         {
             LambdaQueryWrapper<MessagePojo> wrapper = new LambdaQueryWrapper<>();
@@ -170,8 +175,10 @@ public class TextController {
                 idlist.add(pojo.getUuid());
             }
         }
+        //使用Mybatis-plus的方法移除他们
        if(messageInfoService.removeByIds(idlist))
        {
+           //成功返回OK
            return "OK";
        }
         return "NO";
@@ -180,28 +187,36 @@ public class TextController {
     @ResponseBody
     @GetMapping("/MergeShuju")
     @SaIgnore
+    //合并故事集（选择两个或者多个故事集，传入故事集的新名称，从而将这几个故事集里的条目全部修改为对应的名称）
     public String MergeShuju(@RequestParam String[] storylist, @RequestParam String newname) throws IOException {
+        //如果判断还在记录，此时不能合并，因为数据库还在更新
         if(Const.isrecord)
         {
             return "删除失败，正在记录，请先关闭";
         }
-        //先保存
+        //下面两句话用于数据库保存，做备份使用，为了防止误删，最好的办法就是删除之前先备份。
+        //针对SQLITE，能减少数据库的体积
         backupService.vacuum();
+        //备份的名称，会被上传到webdav上，不必在意他的实现机制
         backupService.backup("merge");
+        //Mybatis的查询语句，查询所有符合的条目
         LambdaQueryWrapper<MessagePojo> wrapper = new LambdaQueryWrapper<>();
         for(String storyname:storylist)
         {
             wrapper.eq(MessagePojo::getStoryname,storyname);
         }
         List<MessagePojo> messagepojolist = messageInfoService.list(wrapper);
+        //修改每一个message的故事名称，这样原有的故事集相当于变成了新的
         for(MessagePojo messagePojo:messagepojolist)
         {
             messagePojo.setStoryname(newname);
         }
+        //如果成功这里就会返回OK
         if(messageInfoService.saveBatch(messagepojolist))
         {
             return "OK";
         }
+        //否则返回NO（这部分您可以自行定制）
         return "NO";
     }
 
